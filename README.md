@@ -1,2 +1,3 @@
-# webApp
-This is the web site of our department
+# SNAAAR web site
+
+This is the code of web site of our department.
