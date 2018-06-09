@@ -1,5 +1,4 @@
 function addAxes (svg, xAxis, yAxis, margin, chartWidth, chartHeight) {
-  // clipping to make sure nothing appears behind legend
   svg.append('clipPath')
     .attr('id', 'axes-clip')
     .append('polygon')
@@ -30,7 +29,6 @@ function addAxes (svg, xAxis, yAxis, margin, chartWidth, chartHeight) {
       .attr('y', 6)
       .attr('dy', '.71em')
       .style('text-anchor', 'end')
-    //  .text('Time (s)');
 }
 
 function drawPaths (svg, data, x, y) {
@@ -90,9 +88,9 @@ function startTransitions (svg, chartWidth, chartHeight, rectClip, markers, x) {
 }
 
 function makeChart (data, markers) {
-  var svgWidth  = document.getElementsByClassName("demoWindow")[0].offsetWidth, //960
-      svgHeight = document.getElementsByClassName("demoWindow")[0].offsetHeight,//500
-      margin = { top: 20, right: 20, bottom: 130, left: 40 },
+  var svgWidth  = document.getElementsByClassName("demoWindow")[0].offsetWidth,
+      svgHeight = document.getElementsByClassName("demoWindow")[0].offsetHeight - document.getElementById('graphLegend').offsetHeight,
+      margin = { top: 30, right: 20, bottom: 30, left: 40 },
       chartWidth  = svgWidth  - margin.left - margin.right,
       chartHeight = svgHeight - margin.top  - margin.bottom;
 
@@ -112,14 +110,20 @@ function makeChart (data, markers) {
     .append('g')
       .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-svg.append('title')
-  .text('SomeText');
-  // clipping to start chart hidden and slide it in later
   var rectClip = svg.append('clipPath')
     .attr('id', 'rect-clip')
     .append('rect')
       .attr('width', 0)
       .attr('height', chartHeight);
+
+      // svg.append("text")
+      //         .attr("x", (-margin.left+5))
+      //         .attr("y", 0 - (margin.top-16))
+      //         .attr("text-anchor", "right")
+      //         .attr("text-rendering", "geometricPrecision")
+      //         .attr("text-align", "justify")
+      //         .style("font-size", "16px")
+      //         .text("Нейтронный активационный анализ (НАА) − ядерно-физический метод определения состава вещества, основанный на активации атомных ядер с помощью нейтронов и исследовании радиоактивного излучения, возникающего вследствие возбуждения атомных ядер.");
 
   addAxes(svg, xAxis, yAxis, margin, chartWidth, chartHeight);
   drawPaths(svg, data, x, y);

@@ -18,7 +18,7 @@
 
 <body>
 
-
+<body onload="createNaaTabContent()">
 
   <script src="js/functions.js"></script>
   <div class="HeaderBlock">
@@ -71,11 +71,12 @@
     FontByScreen(document.documentElement.clientWidth);
   </script>
   <div class="MainBlock">
-    <div class="demoWindow">
-      <script src="js/spectre.js"></script>
+    <div class="manageBlock">
+      <button class='activeManButton' id='naaButton' onclick="createNaaTabContent()">НАА</button>
+      <button class='manButtons' id='procButton' onclick="createProcTabContent()">Обработка</button>
+      <button class='manButtons' id='commButton' onclick="createCommTabContent()">Сотрудничество</button>
     </div>
-
-    <a href=""><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Руководство</a>
+    <div class="demoWindow">
+    </div>
   </div>
-
 </body>

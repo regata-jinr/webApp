@@ -31,3 +31,48 @@ window.addEventListener('resize', go);
 function go() {
 FontByScreen(document.documentElement.clientWidth);
 }
+
+function createNaaTabContent() {
+  Array.from(document.getElementsByClassName("activeManButton")).forEach(function(item) {
+   item.className = "manButtons";
+});
+  document.getElementById('naaButton').className = "activeManButton";
+
+  var wind = document.getElementsByClassName("demoWindow")[0];
+  wind.innerHTML = '';
+
+  var par = document.createElement("p");
+  par.setAttribute("id", 'graphLegend');
+  var text = document.createTextNode("Нейтронный активационный анализ (НАА) − ядерно-физический метод определения состава вещества, основанный на активации атомных ядер с помощью нейтронов и исследовании радиоактивного излучения, возникающего вследствие возбуждения атомных ядер.");
+  par.appendChild(text);
+  wind.appendChild(par);
+  var imported = document.createElement("script");
+  imported.src = "js/spectre.js";
+  wind.appendChild(imported);
+}
+
+function createProcTabContent() {
+  Array.from(document.getElementsByClassName("activeManButton")).forEach(function(item) {
+   item.className = "manButtons";
+});
+  document.getElementById('procButton').className = "activeManButton";
+  var wind = document.getElementsByClassName("demoWindow")[0];
+  wind.innerHTML = '';
+  var par = document.createElement("p");
+  par.setAttribute("id", 'graphLegend');
+  var text = document.createTextNode("Сектор НААиПИ оснащен современным оборудованием, позволяющим проводить подготовку образцов");
+  par.appendChild(text);
+  wind.appendChild(par);
+  var imported = document.createElement("IMG");
+  imported.id = "procImg";
+  imported.src="imgs/samples.jpeg";
+    wind.appendChild(imported);
+
+}
+
+function createCommTabContent() {
+  Array.from(document.getElementsByClassName("activeManButton")).forEach(function(item) {
+   item.className = "manButtons";
+});
+  document.getElementById('commButton').className = "activeManButton";
+}
