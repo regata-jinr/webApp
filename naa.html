@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="naa,gamma,spectre,neutron activation analysis,concentrations of substances,definition of elemental composition,concentrations,elements,jinr,flnp,dubna,composition of matter ">
+  <meta name="description" content="Sector of Neutron Activation Analysis and Applied Research">
+  <meta name="author" content="bdrum@jinr.ru">
+  <link rel="icon" href="imgs/#00CC00SpectreCircle.ico">
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/naa.css">
+  <link rel="stylesheet" href="http://slidesjs.com/examples/playing/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <title>NAA|JINR-Description of method</title>
+</head>
+
+<body>
+  <script src="js/main.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/naa.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <div class="HeaderBlock">
+    <a href="/index.html">
+<img border="0" alt="logo" src="imgs/logoatt3.png" id="logoRegataNaa" >
+</a>
+    <!-- <img id="logoRegataNaa" src="imgs/logoatt3.png" alt="logo"> -->
+    <ul class="TopNavBar">
+      <li><a class="naaBar barPoint" href="/naa" onmouseover="Show('naaList')" onmouseout="Hide('naaList')">НАА</a>
+        <ul id="naaList" class="hide" onmouseover="Show('naaList')" onmouseout="Hide('naaList')">
+          <li><a href="/naa.html#principles">Принцип</a></li>
+          <li><a href="/naa.html#advantages">Преимущества метода</a></li>
+          <li><a href="/naa.html#disadvantages">Недостатки метода</a></li>
+          <li><a href="/naa.html#resolution">Чувствительность метода</a></li>
+          <li><a href="/naa.html#equipment">Оснащение</a></li>
+        </ul>
+      </li>
+      <li><a class="equipmentBar barPoint" href="/equipment" onmouseover="Show('equipmentList')" onmouseout="Hide('equipmentList')">Оборудование</a>
+        <ul id="equipmentList" class="hide" onmouseover="Show('equipmentList')" onmouseout="Hide('equipmentList')">
+          <li><a href="/equipment#detectors">Детекторы</a></li>
+          <li><a href="/equipment#chemical">Химическое оснащение</a></li>
+          <li><a href="/equipment#software">Програмное обеспечение</a></li>
+        </ul>
+      </li>
+      <li><a class="projectstBar barPoint" href="/projects" onmouseover="Show('projectsList')" onmouseout="Hide('projectsList')">Проекты</a>
+        <ul id="projectsList" class="hide" onmouseover="Show('projectsList')" onmouseout="Hide('projectsList')">
+          <li><a href="/projects#publications">Публикации</a></li>
+          <li><a href="/projects#education">Образование</a></li>
+        </ul>
+      </li>
+      <li><a class="staffBar barPoint" href="/staff" onmouseover="Show('staffList')" onmouseout="Hide('staffList')">Сотрудники</a>
+        <ul id="staffList" class="hide" onmouseover="Show('staffList')" onmouseout="Hide('staffList')">
+          <li><a href="/staff#bosses">Руководство</a></li>
+          <li><a href="/staff#physics">Физическая часть</a></li>
+          <li><a href="/staff#chemistry">Химическая часть</a></li>
+          <li><a href="/staff#software">Программная часть</a></li>
+          <li><a href="/staff#ecology">Экологическая часть</a></li>
+        </ul>
+      </li>
+      <li><a class="clientsBar barPoint" href="/clients" onmouseover="Show('clientsList')" onmouseout="Hide('clientsList')">Клиентам</a>
+        <ul id="clientsList" class="hide" onmouseover="Show('clientsList')" onmouseout="Hide('clientsList')">
+          <li><a href="/clients#form">Заполнить анкету</a></li>
+          <li><a href="/clients#contacts">Связаться с нами</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    FontByScreen(document.documentElement.clientWidth);
+  </script>
+
+  <div class="MainBlock">
+    <h1 align="center" id="principles">Нейтронный активационный анализ</h1>
+    <p id="fp">Нейтронный активационный анализ (НАА) − ядерно-физический метод определения состава вещества, основанный на активации атомных ядер с помощью нейтронов и исследовании радиоактивного излучения, возникающего вследствие возбуждения атомных ядер. Идентификация
+      элементов и количественный анализ производятся путем измерения интенсивности и энергии гамма-излучения, а также по периоду полураспада радиоактивных ядер. <b>Поскольку в основе активационного анализа лежат ядерные процессы, результаты НАА не зависят от того, в какое химическое соединение входят атомы определяемых элементов</b>,
+      а связаны только с изотопным составом. Количественное определение состава вещества при активационном анализе основано на том, что активность образовавшегося радионуклида пропорциональна количеству ядер исходного нуклида определяемого элемента. </p>
+    <h1 align="center" id="advantages">Преимущества метода</h1>
+    <div class="icons" id="bar">
+      <i data-feather="bar-chart" id="my-bar" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Высокая чувствительность для большинства элементов,<br>особенно для тяжелых металлов с Z>10</p>
+    </div>
+    <div class="icons" id="crossHair">
+      <i data-feather="crosshair" id="my-crossHair" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Хорошая селективность,<br>связанная с специфичностью ядерно-физических характеристик элементов</p>
+    </div>
+    <div class="icons" id="list">
+      <i data-feather="list" id="my-list" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Возможность одновременного определения большого числа элементов</p>
+    </div>
+    <div class="icons" id="share">
+      <i data-feather="share-2" id="my-share" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Независимость результатов анализа от вида химических соединений элементов</p>
+    </div>
+    <div class="icons" id="shield">
+      <i data-feather="shield" id="my-shield" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Недеструктивный характер анализа, и , следовательно,<br>отсутсвие риска загрязнений реактивами или неполного растворения образцов</p>
+    </div>
+    <div class="icons" id="package">
+      <i data-feather="package" id="my-package" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Простота процедуры подготовки образцов для анализа</p>
+    </div>
+    <div class="icons" id="target">
+      <i data-feather="target" id="my-target" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Хорошая точность порядка ±(10÷15)%<br>при определении содержаний порядка ppm (10-6 г)</p>
+    </div>
+    <div class="icons" id="minus">
+      <i data-feather="minus" id="my-minus" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Возможность устранения систематических погрешностей</p>
+    </div>
+    <div class="icons" id="grid">
+      <i data-feather="grid" id="my-grid" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Возможность минимизации влияния матричных элементов образцов</p>
+    </div>
+    <div class="icons" id="clipboard">
+      <i data-feather="clipboard" id="my-clipboard" class="advIcos" stroke-width="1" color="#00CC00"></i>
+      <p class="advText">Простота подготовки стандартов сравнения</p>
+    </div>
+    <h1 align="center" id="disadvantages">Недостатки метода</h1>
+    <div class="icons" id="loader">
+      <i data-feather="loader" id="my-loader" class="advIcos" stroke-width="1" color="red"></i>
+      <p class="advText">Необходимость использования ядерных реакторов</p>
+    </div>
+    <div class="icons" id="cloud">
+      <i data-feather="cloud" id="my-cloud" class="advIcos" stroke-width="1" color="red"></i>
+      <p class="advText">Проблемы, связанные с хранением и утилизацией радиоактивных отходов</p>
+    </div>
+    <h1 align="center" id="resolution">Чувствительность НАА в увловиях облучения образцов на реакторе ИБР-2М</h1>
+
+    <div class="table100 ver3 m-b-110">
+      <table data-vertable="ver3">
+        <thead>
+          <tr class="row100 head">
+            <th class="column100 column1" data-column="column1">Направления использования ИНАА</th>
+            <th class="column100 column2" data-column="column2">Группа элементов</th>
+            <th class="column100 column3" data-column="column3">Определяемые элементы</th>
+            <th class="column100 column4" data-column="column4">Диапазон концентраций</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="4"><b>Промышленность</b><br>Особо чистые материалы Al, Si, SiO2, AsGa</td>
+            <td class="column100 column2" data-column="column2">1</td>
+            <td class="column100 column3" data-column="column3">Ge,Sm,Eu,Gd,Tb,Yb,Au,Th,V</td>
+            <td class="column100 column4" data-column="column4">10-2 – 1,0 ppb</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">2</td>
+            <td class="column100 column3" data-column="column3">Co,Br,Mo,Ag,Se,Te, La, Ce, Hf</td>
+            <td class="column100 column4" data-column="column4">1,0 – 10 ppb</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">3</td>
+            <td class="column100 column3" data-column="column3">Sc,As,Zr,Ba,Nd,Cr</td>
+            <td class="column100 column4" data-column="column4">10 – 200 ppb</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">4</td>
+            <td class="column100 column3" data-column="column3">Fe,Zn</td>
+            <td class="column100 column4" data-column="column4">0,1 – 4,0 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="6">Контроль технологических процессов (переработка руд благородных металлов)</td>
+            <td class="column100 column2" data-column="column2">1</td>
+            <td class="column100 column3" data-column="column3">Au, Ir</td>
+            <td class="column100 column4" data-column="column4">2 ppb – 5 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">2</td>
+            <td class="column100 column3" data-column="column3">Eu,Sb,Yb, Sm,Sc,Lu</td>
+            <td class="column100 column4" data-column="column4">0,1 – 5 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">3</td>
+            <td class="column100 column3" data-column="column3">Ag,As,Ce,Co,Mo,Nd,W</td>
+            <td class="column100 column4" data-column="column4">5 – 20 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">4</td>
+            <td class="column100 column3" data-column="column3">Br,Cs,Hf,Hg,La,Ta</td>
+            <td class="column100 column4" data-column="column4">1 – 50 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">5</td>
+            <td class="column100 column3" data-column="column3">Ba,Cr,Ni,Rb,Zn</td>
+            <td class="column100 column4" data-column="column4">10 – 200 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">6</td>
+            <td class="column100 column3" data-column="column3">Ca,Fe,Na,Sr,Sn</td>
+            <td class="column100 column4" data-column="column4">0,01 – 1,0 вес.%</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="3">Оптимизация защитных бетонов и их составляющих по долгоживущей радиоактивности</td>
+            <td class="column100 column2" data-column="column2">1</td>
+            <td class="column100 column3" data-column="column3">Eu,Cs,Ta</td>
+            <td class="column100 column4" data-column="column4">0,01 – 5 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">2</td>
+            <td class="column100 column3" data-column="column3">Co,Sc</td>
+            <td class="column100 column4" data-column="column4">0,2 – 100 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">3</td>
+            <td class="column100 column3" data-column="column3">Fe</td>
+            <td class="column100 column4" data-column="column4">0.04 – 6,0 вес.%</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="3">Биотехнологии (бактериальное выщелачивание металлов из бедных руд, пород и промышленных отходов)</td>
+            <td class="column100 column2" data-column="column2">1</td>
+            <td class="column100 column3" data-column="column3">Zr,Ru,Zn,Sr,Cr,Ba</td>
+            <td class="column100 column4" data-column="column4">1,0 – 100 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">2</td>
+            <td class="column100 column3" data-column="column3">Eu,Tb,Lu,Tm,Dy,Cs,Sb,Ta,Tc</td>
+            <td class="column100 column4" data-column="column4">0.02 – 300 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">3</td>
+            <td class="column100 column3" data-column="column3">Mo,Cd,Au,Sm,Th</td>
+            <td class="column100 column4" data-column="column4">0,05 – 100 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="3"><b>Геология</b><br>Изучение распределения РЗЭ и др. в магматических и осадочных породах</td>
+            <td class="column100 column2" data-column="column2">1</td>
+            <td class="column100 column3" data-column="column3">Eu,Tb,Lu,Tm,Dy,Cs,Sb,Ta,Tc,
+Mo,Cd,Au,Sm,Th</td>
+            <td class="column100 column4" data-column="column4">0,1 – 1,0 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">2</td>
+            <td class="column100 column3" data-column="column3">La,Nd,Yb,Ce,Gd,Sn,Hf,Sc,Cs,Rb,As,Co,V</td>
+            <td class="column100 column4" data-column="column4">1,0 – 3,0 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">3</td>
+            <td class="column100 column3" data-column="column3">Zr,Ru,Zn,Sr,Cr,Ba</td>
+            <td class="column100 column4" data-column="column4">30 – 1000 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="3">Изучение распределения крупно- и мелкодисперсного Au в осадочных породах, включая шельф</td>
+            <td class="column100 column2" data-column="column2">1</td>
+            <td class="column100 column3" data-column="column3">Au</td>
+            <td class="column100 column4" data-column="column4">0,01 – 100 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">2</td>
+            <td class="column100 column3" data-column="column3">As,Sb,La, Ba, Th</td>
+            <td class="column100 column4" data-column="column4">1,0 - 100 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">3</td>
+            <td class="column100 column3" data-column="column3">Rb,Sc,Fe</td>
+            <td class="column100 column4" data-column="column4">10 – 700 ppm</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="3">Поиск и разведка полезных ископаемых, в частности, нефти</td>
+            <td class="column100 column2" data-column="column2">1</td>
+            <td class="column100 column3" data-column="column3">Eu,Au,Co,Cu,Ga,As,Re,Sc,U,S,K</td>
+            <td class="column100 column4" data-column="column4">10 - 100 ppb</td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">2</td>
+            <td class="column100 column3" data-column="column3">Hg,Se,Zn,Mo,In,Cr,Br,Na,Ca,Al</td>
+            <td class="column100 column4" data-column="column4">0,05 – 70 ppm</td>
+          </tr>
+
+          <tr class="row100">
+            <td class="column100 column2" data-column="column2">3</td>
+            <td class="column100 column3" data-column="column3">V,Ni,Fe, Mn,Al,Cl</td>
+            <td class="column100 column4" data-column="column4">0,5 ppm – 100 ppm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h1 align="center" id="equipment">Оснащение</h1>
+    <p id="fp">ПТУ РЕГАТА оснащена «горячими» камерами с дистанционными манипуляторами, герметичным перчаточным боксом для проведения работ с открытыми радиоактивными источниками. В перспективе предполагается развивать радиохимическое направление НАА на базе ректора ИБР-2М для решения сложных специфических задач в области наук о жизни (Life Sciences) и материаловедении.</p>
+
+
+  </div>
+
+
+</body>
+
+</html>

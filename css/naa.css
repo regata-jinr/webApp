@@ -1,0 +1,127 @@
+html {
+  overflow: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: auto;
+}
+
+ul.TopNavBar {
+  padding-left: 1%;
+  vertical-align: middle;
+}
+
+.logoBlockNaa {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#logoRegataNaa {
+  display: inline-block;
+  vertical-align: middle;
+  height: 10%;
+  width: 10%;
+  margin-left: 20%;
+}
+
+.MainBlock {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 55%;
+  min-height: 95vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 3%;
+  background-color: white;
+  box-shadow: 0 0 20px #d3d3d3;
+}
+
+#principles {
+  padding-top: 7%;
+  padding-bottom: 3%;
+  background: none;
+  font-family: Adonis, AdonisW05, "Fira Sans";
+  font-size: 32px;
+  text-transform: none;
+}
+
+#advantages {
+  padding-top: 2%;
+  background: none;
+  font-family: Adonis, AdonisW05, "Fira Sans";
+  font-size: 22px;
+  text-transform: none;
+  text-decoration: underline;
+  text-decoration-color: #00CC00;
+}
+
+#disadvantages {
+  padding-top: 2%;
+  background: none;
+  font-family: Adonis, AdonisW05, "Fira Sans";
+  font-size: 22px;
+  text-transform: none;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#resolution {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: none;
+  font-family: Adonis, AdonisW05, "Fira Sans";
+  font-size: 22px;
+  text-transform: none;
+}
+
+#equipment {
+  padding-top: 0;
+  padding-bottom: 2%;
+  background: none;
+  font-family: Adonis, AdonisW05, "Fira Sans";
+  font-size: 22px;
+  text-transform: none;
+}
+
+#fp {
+  padding-right: 2%;
+  padding-left: 2%;
+  font-family: Adonis, AdonisW05, "Fira Sans";
+  text-align: middle;
+  font-size: 20px;
+}
+
+.advIcos {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+  vertical-align: middle;
+  padding-right: 3%;
+}
+
+.advText {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: Adonis, AdonisW05, "Fira Sans";
+  text-align: middle;
+  font-size: 20px;
+}
+
+.icons {
+  padding: 0;
+  margin: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
