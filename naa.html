@@ -7,30 +7,26 @@
   <meta name="keywords" content="naa,gamma,spectre,neutron activation analysis,concentrations of substances,definition of elemental composition,concentrations,elements,jinr,flnp,dubna,composition of matter ">
   <meta name="description" content="Sector of Neutron Activation Analysis and Applied Research">
   <meta name="author" content="bdrum@jinr.ru">
-  <link rel="icon" href="imgs/#00CC00SpectreCircle.ico">
-  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="icon" href="imgs/circleSpectra.ico">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/naa.css">
-  <link rel="stylesheet" href="http://slidesjs.com/examples/playing/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-  <title>NAA|JINR-Description of method</title>
+  <title>REGATA|NAA-Description of method</title>
 </head>
 
 <body>
-  <script src="js/main.js"></script>
-  <script src="js/functions.js"></script>
+  <!-- <script src="js/main.js"></script> -->
   <script src="js/naa.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <div class="HeaderBlock">
     <a href="/index.html">
-<img border="0" alt="logo" src="imgs/logoatt3.png" id="logoRegataNaa" >
-</a>
-    <!-- <img id="logoRegataNaa" src="imgs/logoatt3.png" alt="logo"> -->
+      <img border="0" alt="logo" src="imgs/regataLogo.png" id="logoRegataNaa">
+    </a>
     <ul class="TopNavBar">
-      <li><a class="naaBar barPoint" href="/naa" onmouseover="Show('naaList')" onmouseout="Hide('naaList')">НАА</a>
-        <ul id="naaList" class="hide" onmouseover="Show('naaList')" onmouseout="Hide('naaList')">
+      <li><a class="naaBar barPoint" id="naaListMain" href="/naa.html">НАА</a>
+        <ul id="naaList" class="hide">
           <li><a href="/naa.html#principles">Принцип</a></li>
           <li><a href="/naa.html#advantages">Преимущества метода</a></li>
           <li><a href="/naa.html#disadvantages">Недостатки метода</a></li>
@@ -38,21 +34,22 @@
           <li><a href="/naa.html#equipment">Оснащение</a></li>
         </ul>
       </li>
-      <li><a class="equipmentBar barPoint" href="/equipment" onmouseover="Show('equipmentList')" onmouseout="Hide('equipmentList')">Оборудование</a>
-        <ul id="equipmentList" class="hide" onmouseover="Show('equipmentList')" onmouseout="Hide('equipmentList')">
-          <li><a href="/equipment#detectors">Детекторы</a></li>
-          <li><a href="/equipment#chemical">Химическое оснащение</a></li>
-          <li><a href="/equipment#software">Програмное обеспечение</a></li>
+      <li><a class="equipmentBar barPoint" id="equipmentListMain" href="/equipments.html">Оборудование</a>
+        <ul id="equipmentList" class="hide">
+          <li><a href="/equipments.html#ibr">ИБР-2М</a></li>
+          <li><a href="/equipments.html#detectors">Детекторы</a></li>
+          <li><a href="/equipments.html#auto">Автоматизация</a></li>
+          <li><a href="/equipments.html#chemical">Химическое оснащение</a></li>
         </ul>
       </li>
-      <li><a class="projectstBar barPoint" href="/projects" onmouseover="Show('projectsList')" onmouseout="Hide('projectsList')">Проекты</a>
-        <ul id="projectsList" class="hide" onmouseover="Show('projectsList')" onmouseout="Hide('projectsList')">
+      <li><a class="projectstBar barPoint" id="projectsListMain" href="/projects">Проекты</a>
+        <ul id="projectsList" class="hide">
           <li><a href="/projects#publications">Публикации</a></li>
           <li><a href="/projects#education">Образование</a></li>
         </ul>
       </li>
-      <li><a class="staffBar barPoint" href="/staff" onmouseover="Show('staffList')" onmouseout="Hide('staffList')">Сотрудники</a>
-        <ul id="staffList" class="hide" onmouseover="Show('staffList')" onmouseout="Hide('staffList')">
+      <li><a class="staffBar barPoint" id="staffListMain" href="/staff.html">Сотрудники</a>
+        <ul id="staffList" class="hide">
           <li><a href="/staff#bosses">Руководство</a></li>
           <li><a href="/staff#physics">Физическая часть</a></li>
           <li><a href="/staff#chemistry">Химическая часть</a></li>
@@ -60,15 +57,15 @@
           <li><a href="/staff#ecology">Экологическая часть</a></li>
         </ul>
       </li>
-      <li><a class="clientsBar barPoint" href="/clients" onmouseover="Show('clientsList')" onmouseout="Hide('clientsList')">Клиентам</a>
-        <ul id="clientsList" class="hide" onmouseover="Show('clientsList')" onmouseout="Hide('clientsList')">
+      <li><a class="clientsBar barPoint" id="clientsListMain" href="/clients">Клиентам</a>
+        <ul id="clientsList" class="hide">
           <li><a href="/clients#form">Заполнить анкету</a></li>
           <li><a href="/clients#contacts">Связаться с нами</a></li>
         </ul>
       </li>
     </ul>
   </div>
-
+  <script src="js/functions.js"></script>
   <script>
     FontByScreen(document.documentElement.clientWidth);
   </script>
@@ -142,7 +139,10 @@
         </thead>
         <tbody>
           <tr class="row100">
-            <td class="column100 column1" data-column="column1" rowspan="4"><b>Промышленность</b><br>Особо чистые материалы Al, Si, SiO2, AsGa</td>
+            <td class="column100 column1" data-column="column1" colspan="4" style="text-align:center;"><b>Промышленность</b></td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="4">Особо чистые материалы Al, Si, SiO2, AsGa</td>
             <td class="column100 column2" data-column="column2">1</td>
             <td class="column100 column3" data-column="column3">Ge,Sm,Eu,Gd,Tb,Yb,Au,Th,V</td>
             <td class="column100 column4" data-column="column4">10-2 – 1,0 ppb</td>
@@ -231,12 +231,14 @@
             <td class="column100 column3" data-column="column3">Mo,Cd,Au,Sm,Th</td>
             <td class="column100 column4" data-column="column4">0,05 – 100 ppm</td>
           </tr>
-
           <tr class="row100">
-            <td class="column100 column1" data-column="column1" rowspan="3"><b>Геология</b><br>Изучение распределения РЗЭ и др. в магматических и осадочных породах</td>
+            <td class="column100 column1" data-column="column1" colspan="4" style="text-align:center;"><b>Геология</b></td>
+          </tr>
+          <tr class="row100">
+            <td class="column100 column1" data-column="column1" rowspan="3">Изучение распределения РЗЭ и др. в магматических и осадочных породах</td>
             <td class="column100 column2" data-column="column2">1</td>
-            <td class="column100 column3" data-column="column3">Eu,Tb,Lu,Tm,Dy,Cs,Sb,Ta,Tc,
-Mo,Cd,Au,Sm,Th</td>
+            <td class="column100 column3" data-column="column3">Eu,Tb,Lu,Tm,Dy,Cs,Sb,Ta,Tc, Mo,Cd,Au,Sm,Th
+            </td>
             <td class="column100 column4" data-column="column4">0,1 – 1,0 ppm</td>
           </tr>
           <tr class="row100">
@@ -290,12 +292,16 @@ Mo,Cd,Au,Sm,Th</td>
     </div>
 
     <h1 align="center" id="equipment">Оснащение</h1>
-    <p id="fp">ПТУ РЕГАТА оснащена «горячими» камерами с дистанционными манипуляторами, герметичным перчаточным боксом для проведения работ с открытыми радиоактивными источниками. В перспективе предполагается развивать радиохимическое направление НАА на базе ректора ИБР-2М для решения сложных специфических задач в области наук о жизни (Life Sciences) и материаловедении.</p>
+    <p id="fp">ПТУ РЕГАТА оснащена «горячими» камерами с дистанционными манипуляторами, герметичным перчаточным боксом для проведения работ с открытыми радиоактивными источниками. В перспективе предполагается развивать радиохимическое направление НАА на базе ректора
+      ИБР-2М для решения сложных специфических задач в области наук о жизни (Life Sciences) и материаловедении.</p>
 
 
   </div>
 
-
+  <footer>
+    <p class="sign" id="signDep">Сектор нейтронного активационного анализа и прикладных исследований</p>
+    <p class="sign" id="signLab">Лаборатории Нейтронной Физики им. И.М. Франка Объединенного Института Ядерных Исследований</p>
+  </footer>
 </body>
 
 </html>

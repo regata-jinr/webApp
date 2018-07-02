@@ -1,3 +1,9 @@
+::-webkit-input-placeholder {}
+
+:-moz-placeholder {}
+
+:-ms-input-placeholder {}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -30,7 +36,7 @@ ul.TopNavBar {
 }
 
 .TopNavBar a {
-  width display: inline-block;
+  display: inline-block;
   margin: 0;
   padding: 0;
   color: white;
@@ -80,10 +86,6 @@ ul.TopNavBar {
   text-decoration: underline;
 }
 
-.naaList, .equipmentList, .staffList, .projectsList {
-  position: absolute;
-}
-
 ul {
   list-style: none;
   display: inline-block;
@@ -103,12 +105,10 @@ a {
   margin: 0;
   padding: 0;
   line-height: 250%;
-  /* margin-top: 20px; */
 }
 
 .show a {
   display: block;
-  /*font-size: 120%;*/
   color: white;
   background-color: #1E4793;
   padding-left: 5px;
@@ -137,7 +137,7 @@ a {
   height: 5%;
   widows: 100%;
   background-color: #f6f9fa;
-    /* box-shadow: 0 0 20px #d3d3d3; */
+  /* box-shadow: 0 0 20px #d3d3d3; */
 }
 
 .manButtons {
@@ -179,13 +179,11 @@ a {
   border-top: 3px solid #1E4793;
   background-color: white;
   color: black;
-
 }
 
 .demoWindow {
   width: 100%;
   height: 90%;
-
 }
 
 #graphLegend {
@@ -206,4 +204,32 @@ svg {
   margin: 3%;
   width: 95%;
   height: 90%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  background-color: #1E4793;
+  width: 100%;
+  height: 7%;
+}
+
+.sign {
+  padding: 0;
+  margin: 0 auto;
+  margin-right: 0.3%;
+  display: block;
+  color: white;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  font-family: "Fira Sans ", sans-serif;
+  font-size: 18px;
+  clear: both;
+  line-height: 30px;
+  text-align: center;
+}
+
+#signDep {
+  margin-top: 0.3%;
 }
