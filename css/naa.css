@@ -10,9 +10,24 @@ body {
   height: auto;
 }
 
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  line-height: 250%;
+}
+
 ul.TopNavBar {
+  display: inline-block;
   padding-left: 1%;
-  vertical-align: middle;
+  height: 100%;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
 .logoBlockNaa {
@@ -93,7 +108,7 @@ ul.TopNavBar {
   padding-right: 2%;
   padding-left: 2%;
   font-family: Adonis, AdonisW05, "Fira Sans";
-  text-align: middle;
+  text-align: justify;
   font-size: 20px;
 }
 
@@ -124,4 +139,8 @@ ul.TopNavBar {
   padding-bottom: 2%;
   padding-left: 7%;
   padding-right: 7%;
+}
+
+footer {
+  position: relative;
 }
