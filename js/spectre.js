@@ -54,30 +54,23 @@ function addMarker(marker, svg, chartHeight, x) {
   var xPos = x(marker.energy),
     yPosStart = 0,
     yPosEnd = chartHeight;
-  var markerG = svg.append('g')
-    .attr('class', 'marker ' + marker.type.toLowerCase())
-    .attr('transform', 'translate(' + xPos + ', ' + yPosEnd + ')')
-    .attr('opacity', 0);
-
-  markerG.transition()
-    .duration(1000)
-    .attr('transform', 'translate(' + xPos + ', ' + yPosStart + ')')
-    .attr('opacity', 1);
-  markerG.append('path')
-    .attr('d', 'M' + xPos + ',' + (yPosEnd))
+  svg.append('path')
+    .attr('d', 'M' + xPos + ',' + yPosEnd)
     .attr('stroke', 'red')
     .transition()
     .duration(1000)
     .attr('d', 'M' + xPos + ',' + (yPosStart + 60) + 'l' + 0 + ',' + (yPosEnd - 60))
     .attr('stroke', 'red');
-
-  markerG.append('text')
-    .attr('x', xPos)
-    .attr('y', xPos * 0.9)
+  svg.append('text')
+    .attr('x', x(marker.energy))
+    .attr('y', yPosEnd)
+    .transition()
+    .duration(1000)
+    .attr('x', x(marker.energy))
+    .attr('y', yPosStart + 60)
     .style('fill', 'red')
     .style("font-size", "20px")
     .text(marker.type);
-
 }
 
 function startTransitions(svg, chartWidth, chartHeight, rectClip, markers, x) {
